@@ -4,9 +4,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: var(--prototype);
+    font-family: var(--sensations);
+    font-size: 25px;
 }
 
+.items:hover {
+    color: var(--primary-color);
+}
 
 .logo {
     color: var(--primary-color);
@@ -29,12 +33,40 @@
 
 .menu li {
     margin: 0 10px;
+    position: relative;
 }
 
 .menu a {
     color: var(--base-color);
     text-decoration: none;
     padding: 8px 16px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submenu li:hover {
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submenu li a {
+    /*color: #fff;
+    padding: 1px 1px;*/
+}
+
+.menu li:hover .submenu {
     display: block;
 }
 

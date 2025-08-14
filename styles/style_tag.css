@@ -42,7 +42,7 @@ a:hover{
 /*-------------------------------comienzo a estilizar-----------------------------------*/
 header{
     /*background-image: url("https://horadecodar.com.br/wp-content/uploads/2023/04/Linguagem-HTML-1536x1024.jpg");*/
-    background-image: url('../images/fondo.jpg');
+    /* url('../images/background.jpg');*/
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;

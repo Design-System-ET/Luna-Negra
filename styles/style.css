@@ -4,11 +4,11 @@
 @import url('../styles/style_section-contacto.css');
 
 .titulo_{
-    font-family: var(--prototype);
-    font-size: 140px;
-    color: var(--subtitle-color);
-    margin-top: 40vh;
-    text-shadow: 10px 10px 10px rgba(63, 62, 62, 0.9);
+    font-family: var(--sensations);
+    font-size: 300px;
+    color: var(--blanco);
+    margin-top: 30vh;
+    text-shadow: 10px 10px 10px rgba(100, 9, 153, 0.9);
 }
 
 @media (max-width: 768px){
@@ -17,8 +17,20 @@
     }
 }
 
+.subtitulo_{
+    font-family: var(--sensations);
+    font-size: 50px;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 5px 5px 5px rgba(63, 62, 62, 0.9);
+}
+
 .titulo_main{
-    font-family: var(--prototype);
+    font-family: var(--sensations);
+    color: var(--blanco);
+    font-size: 30px;
+    color: var(--)
 }
 
 
@@ -69,3 +81,13 @@
         height: auto;
     }
 }
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }  

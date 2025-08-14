@@ -8,14 +8,21 @@
     src: url('../fonts/Prototype.ttf');
 }
 
+@font-face {
+    font-family: Sensations;
+    src: url('../fonts/Sensations.ttf') format('truetype');
+}
+
 :root{
 
     /*COLORS*/
-    --primary-color: blue;
-    --secondary-color: red;
+    --primary-color: #512DA8;
+    --secondary-color: #673AB7;
     --base-color: white;
     --actionBar-color: rgba(0, 0, 0, 0.5);
     --subtitle-color: gray;
+
+    --blanco: white;
 
 
     /*SIZES*/
@@ -26,4 +33,5 @@
     /*FONTS*/
     --seven: 'Seven', sans-serif;
     --prototype: 'Prototype', sans-serif;
+    --sensations: 'Sensations', sans-serif;
 }
