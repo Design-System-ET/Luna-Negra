@@ -21,7 +21,7 @@ main, footer{
 
 div{
     display: grid;
-    min-height: 100hv;
+
     grid-template-rows: auto 1fr auto
 }
 
@@ -77,7 +77,7 @@ nav{
 section {
     height: 100vh; /*100vh ocupa todo la altura de la pantalla*/
     align-items: flex-start;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin-bottom: 20px;
 }
 

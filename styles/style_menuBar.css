@@ -20,7 +20,7 @@
 }
 
 .ico{
-    width: 50px;
+    width: 180px;
     margin-right: 10px;
 }
 
@@ -61,10 +61,10 @@
     margin-bottom: 5px;
 }
 
-.submenu li a {
-    /*color: #fff;
-    padding: 1px 1px;*/
-}
+/*.submenu li a {
+    color: #fff;
+    padding: 1px 1px;
+}*/
 
 .menu li:hover .submenu {
     display: block;

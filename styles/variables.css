@@ -13,6 +13,11 @@
     src: url('../fonts/Sensations.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: Le Jour Script;
+    src: url(../fonts/Le-Jour-Script.otf) format('opentype');
+}
+
 :root{
 
     /*COLORS*/
@@ -26,6 +31,7 @@
 
 
     /*SIZES*/
+    --text: 25px;
     
 
     
@@ -34,4 +40,5 @@
     --seven: 'Seven', sans-serif;
     --prototype: 'Prototype', sans-serif;
     --sensations: 'Sensations', sans-serif;
+    --le_your_script: 'Le Jour Script', sans-serif;
 }
