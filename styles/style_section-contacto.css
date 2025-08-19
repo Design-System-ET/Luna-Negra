@@ -8,8 +8,9 @@
 
 .form{
     width: 60%;
-    background-color: rgb(236, 232, 232);
+    background-color:#ccc;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50px 50px 50px 50px;
 }
 
 
@@ -51,7 +52,7 @@ input, textarea {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 30px;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
@@ -63,22 +64,24 @@ input:focus, textarea:focus {
 
 textarea {
     resize: none;
+    border-radius: 30px;
 }
 
 .btn-submit {
     display: block;
-    width: 20%;
-    margin: 20px; /* Centrar horizontalmente */
+    width: 50%;
+    margin: 0 auto; /* Centrar horizontalmente */
     padding: 0.8rem;
     background: #6a11cb;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
     text-align: center;
     margin-bottom: 20px
+
 }
 
 .btn-submit:hover {
@@ -86,7 +89,7 @@ textarea {
 }
 
 .ico-form{
-    width: 100px;
+    width: 50%;
     margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
