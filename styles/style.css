@@ -57,6 +57,18 @@
     background-repeat: no-repeat;
 }
 
+.seccion-4{
+    display: flex;
+    align-items: center;
+    padding-left: 0 5%;
+    width: 100%;
+    
+    background-image: url('../images/seccion_4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .ima{
   
     width: 90%;
@@ -101,6 +113,36 @@
     text-align: justify;
     font-size: large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo_contenido{
+    font-family: var(--sensations);
+    color: var(--primary-color);
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 100px;
+}
+
+.titulo_contenido_white{
+    font-family: var(--sensations);
+    color: var(--blanco);
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 100px;
+}
+
+.titulo_contenido_black{
+    font-family: var(--sensations);
+    color: var(--negro);
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 100px;
 }
 
 .bg-video {
@@ -216,6 +258,20 @@
     gap: 10%;
 
 }
+
+.general{
+    display: flex;
+    align-items: center;
+    padding-left: 0 5%;
+    width: 100%;
+    
+    /*background-image: url('../images/background_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+
 
 
 @media (max-width: 768px) {
