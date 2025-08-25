@@ -1,7 +1,9 @@
 @import url('../styles/variables.css');
 @import url('../styles/style_tag.css');
 @import url('../styles/style_menuBar.css');
+@import url('../styles/style_section_tarot.css');
 @import url('../styles/style_section-contacto.css');
+
 
 .titulo_{
     font-family: var(--le_your_script);
@@ -287,6 +289,13 @@
         max-width: 80%;
         height: auto;
         border-radius: 50% 50% 50% 50%;
+    }
+
+    .seccion-4{
+        display: block;
+        align-items: center;
+        height: auto;
+        width: 100%;
     }
 }
 

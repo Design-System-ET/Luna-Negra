@@ -118,6 +118,6 @@ textarea {
 
 @media (max-width: 768px) {
     .header{
-        height: 150px;
+        height: 100px;
     } 
 }

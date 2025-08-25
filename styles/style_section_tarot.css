@@ -1,0 +1,79 @@
+.header_tarot{
+    background-image: url('../images/tarot.jpg');
+}
+
+.img_tarot{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    /*align-items: center;*/
+
+}
+
+.img_tarot_gral{
+    width: 20%;
+    display: block; 
+    margin: 30px;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+    transition: transform 2s ease-out, content 0.6s ease;
+    /*backface-visibility: hidden;*/
+}
+
+.img_tarot_gral:hover{
+    transform: rotateY(180deg);
+}
+
+.carta_1:hover {
+    content: url("/images/carta_1.png");
+}
+
+.carta_2:hover {
+    content: url("/images/carta_2.png");
+}
+
+.carta_3:hover {
+    content: url("/images/carta_3.png");
+}
+
+.seccion-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0 5%;
+    width: 100%;
+    height: auto;
+}
+
+.btn-tarot{
+    display: block;
+    width: 50%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 0.8rem;
+    background: var(--verde);
+    color: var(--blanco);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    margin-bottom: 0px
+
+}
+
+.btn-tarot:hover {
+    background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .header_tarot{
+        height: 0px;
+    } 
+
+    .img_tarot_gral{
+        border-radius: 20px 20px 20px 20px;
+    }
+}

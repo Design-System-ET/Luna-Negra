@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts/whatt.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico">
+
+
+
+
+    <title>Tarot</title>
+</head>
+<body>
+    <header class="header_tarot">
+        <nav>
+            <div class="logo">
+                <img src="images/logo_5.png" alt="imagen personal" class="ico">
+            </div>
+
+            <!-- menu amburguesa cuando se ejecuta en pantalla chica -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            
+            <ul class="menu">
+                <li class="items"><a href="index.html"> Inicio</a></li>
+                <li class="items"><a href="index.html"> Servicios</a>
+                
+                    <ul class="submenu">
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="#reiki">Reiki</a></li>
+                        <li><a href="#radiestesia">Radiestesia</a></li>
+                        <li><a href="#Limpieza">Limpieza Energetica</a></li>
+                        <li><a href="#Corte">Corte de Lazos</a></li>
+                        <li><a href="#tienda">Tienda</a></li>
+                    </ul>
+                
+                </li>
+                <li class="items"><a href="index.html"> Ambiente</a></li>
+                <li class="items"><a href="index.html"> Info</a></li>
+                <li class="items"><a href="formulario.html"> Contacto</a></li>
+            </ul>
+
+        </nav>
+        
+        <div>
+            <p class="titulo_">Tarot</p>
+            <p class="subtitulo_">“Descubre lo que las cartas revelan sobre tu camino.”</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-5">
+
+            <div class="padding_text">
+                <p class="titulo_contenido_black">Tarot</p>
+                <p class="parrafo2">El tarot es mucho más que un mazo de cartas: es un lenguaje simbólico cargado de sabiduría ancestral que nos permite comprender los ciclos de la vida, revelar verdades ocultas y encontrar respuestas a las preguntas que llevamos en el corazón. Cada arcano es un reflejo de energías universales que, al manifestarse en una lectura, nos guían hacia una comprensión más profunda de nosotros mismos y de nuestro camino.</p>
+                <p class="parrafo2">En una consulta de tarot no se trata de predecir un destino fijo, sino de abrir una ventana hacia el presente, mostrando las posibilidades que están frente a ti. Las cartas actúan como un espejo del alma, iluminando aquello que muchas veces permanece en la sombra: emociones no expresadas, bloqueos, oportunidades desaprovechadas o señales que el universo ya está enviando pero que aún no hemos logrado percibir.</p>
+                <p class="parrafo2">Nuestras sesiones de tarot están pensadas como un encuentro de conexión y confianza. En un ambiente de calma y respeto, exploramos juntos los mensajes que el tarot tiene para ti, con la intención de ofrecer claridad, orientación y nuevas perspectivas. A través de esta herramienta podrás comprender mejor las dinámicas de tus relaciones, tomar decisiones más conscientes, aclarar situaciones de incertidumbre y reencontrar la motivación para avanzar con seguridad hacia tus objetivos.</p>
+                <p class="parrafo2">Cada lectura es una experiencia única y personalizada. El tarot no dicta lo que debes hacer, sino que ilumina el camino y te brinda el poder de elegir con mayor consciencia. Al finalizar cada sesión, recibirás no solo una interpretación de las cartas, sino también una guía práctica para aplicar esos mensajes en tu vida cotidiana.</p>
+                <p class="parrafo2">Ya sea que busques respuestas concretas, guía espiritual o simplemente un momento de introspección y autoconocimiento, el tarot se convierte en un aliado poderoso para reencontrar tu equilibrio interior y recordar que siempre tienes la capacidad de transformar tu realidad.</p>
+
+                <br>
+                <p class="parrafo1">Nuestras sesiones de <strong>Tarot</strong></p>
+                <p class="parrafo2">El Tarot es una herramienta de guía y autoconocimiento que te ayuda a comprender mejor tu presente, tomar decisiones con claridad y abrirte a nuevas posibilidades.</p>
+
+                <div class="img_tarot">
+                    <img id="carta_1" src="/images/back_carta.png" alt="Carta 1" class="img_tarot_gral carta_1">
+                    <img id="carta_2" src="/images/back_carta.png" alt="Carta 2" class="img_tarot_gral carta_2">
+                    <img id="carta_3" src="/images/back_carta.png" alt="Carta 3" class="img_tarot_gral carta_3">
+                </div>
+                
+
+                <br>
+                <p class="titulo_contenido_black">En cada consulta encontrarás:</p>
+                <p class="parrafo2"><i class="fa fa-moon" aria-hidden="true"></i> Un espacio seguro y confidencial.</p>
+                <p class="parrafo2"><i class="fa fa-moon" aria-hidden="true"></i> Respuestas claras a tus preguntas.</p>
+                <p class="parrafo2"><i class="fa fa-moon" aria-hidden="true"></i> Orientación para el amor, trabajo, familia y proyectos.</p>
+                <p class="parrafo2"><i class="fa fa-moon" aria-hidden="true"></i> Mensajes que iluminan tu camino espiritual.</p>
+                <br>
+                <p class="parrafo2"><strong>No se trata de adivinar, sino de conectar con la energía para que encuentres dirección y equilibrio.</strong></p>
+            
+                <div class="padding_text">
+                    <button type="button" id="enviar_tarot" class="btn-tarot">Agenda tu sesion aqui!</button>
+                </div>
+            
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="marco">
+
+            <div class="conte">
+                <p class="txt_footer">Contacto</p>
+                
+                <div class="ico_content_2">
+                    <a href="https://api.whatsapp.com/send?phone=59898582316&text=Buenas%2C%20me%20gustar%C3%ADa%20hacer%20una%20consulta..." target="_blank"><img src="images/whatt.png" alt="facebook" class="ico_rs"></a>
+                    <a href=""><img src="images/email_2.png" alt="instagram" class="ico_rs"></a>
+                </div>
+
+            </div>
+
+            <div class="conte">
+                <p class="txt_footer">Redes Sociales</p>
+
+                <div class="ico_content">
+                    <a href="https://www.facebook.com/share/1B4DnHSUdJ/?mibextid=wwXIfr" target="_blank"><img src="images/face.png" alt="facebook" class="ico_rs"></a>
+                    <a href="https://www.instagram.com/lunanegra__accesorios?igsh=dnI2NmVuc2N6M211&utm_source=qr" target="_blank"><img src="images/insta.png" alt="instagram" class="ico_rs"></a>
+                    <a href=""><img src="images/you.png" alt="youtube" class="ico_rs"></a>
+                </div>
+
+
+            </div>
+
+            <div class="conte">
+                <p class="txt_footer">Design by</p>
+                <div class="ico_content">
+                    <img src="images/LOGO.ico" alt="" class="ico_by">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="by">
+            <p>Copyright 2025 - Powered by <a href="">Design System</a></p>
+        </div>
+    </footer>
+</body>
+</html>
