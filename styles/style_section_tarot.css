@@ -76,4 +76,9 @@
     .img_tarot_gral{
         border-radius: 20px 20px 20px 20px;
     }
+
+    .header_tarot{
+        background-image: url('../images/tarot.jpg');
+        height: 100vh;
+    }
 }

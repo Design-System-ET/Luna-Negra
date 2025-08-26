@@ -4,6 +4,13 @@
 @import url('../styles/style_section_tarot.css');
 @import url('../styles/style_section-contacto.css');
 
+.header_main{
+    background-image: url('../images/luna_negra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 .titulo_{
     font-family: var(--le_your_script);
@@ -11,7 +18,7 @@
     font-size: 200px;
     color: var(--blanco);
     margin-top: 30vh;
-    text-shadow: 10px 10px 10px rgba(100, 9, 153, 0.9);
+    text-shadow: 5px 5px 10px rgba(248, 247, 249, 0.9);
 }
 
 @media (max-width: 768px){
