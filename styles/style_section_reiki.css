@@ -1,29 +1,48 @@
-.header_tarot{
+.header_reiki{
     background-image: url('../images/reiki.jpg');
 }
 
 .img_reiki{
     margin-top: 20px;
     display: flex;
-    width: 80%;
+    width: 100%;
     height: auto;;
-    
+    justify-content: center;
 }
 
 .img_reiki_gral{
-    width: 20%;
+    width: 10%;
     display: block; 
     margin-top: 30px;
     margin-bottom: 30px;
-    align-items: center;
 }
 
-.cristal_1:hover{
+.cristal_rojo:hover{
+    content: url('../images/cristal_rojo.png');
+}
+
+.cristal_naranja:hover{
+    content: url('../images/cristal_naranja.png');
+}
+
+.cristal_amarillo:hover{
+    content: url('../images/cristal_amarillo.png');
+}
+
+.cristal_verde:hover{
+    content: url('../images/cristal_verde.png');
+}
+
+.cristal_turquesa:hover{
+    content: url('../images/cristal_turquesa.png');
+}
+
+.cristal_azul:hover{
     content: url('../images/cristal_azul.png');
 }
 
-.cristal_2:hover{
-    content: url('../images/cristal_rojo.png');
+.cristal_violeta:hover{
+    content: url('../images/cristal_violeta.png');
 }
 
 .seccion-6{
