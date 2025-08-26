@@ -1,0 +1,54 @@
+.header_tarot{
+    background-image: url('../images/reiki.jpg');
+}
+
+.img_reiki{
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    height: auto;;
+    
+}
+
+.img_reiki_gral{
+    width: 20%;
+    display: block; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.cristal_1:hover{
+    content: url('../images/cristal_azul.png');
+}
+
+.cristal_2:hover{
+    content: url('../images/cristal_rojo.png');
+}
+
+.seccion-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0 5%;
+    width: 100%;
+    height: auto;
+}
+
+.size{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .header_tarot{
+        background-image: url('../images/tarot.jpg');
+        height: 100vh;
+    }
+
+    .size{
+        font-size: 30px;
+    }
+}
