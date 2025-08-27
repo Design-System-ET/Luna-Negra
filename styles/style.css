@@ -4,6 +4,7 @@
 @import url('../styles/style_section_tarot.css');
 @import url('../styles/style_section-contacto.css');
 @import url('../styles/style_section_reiki.css');
+@import url('../styles/style_section_radiestesia.css');
 
 .header_main{
     background-image: url('../images/luna_negra.jpg');

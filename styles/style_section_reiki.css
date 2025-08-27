@@ -62,7 +62,7 @@
 }
 
 @media (max-width: 768px) {
-    .header_tarot{
+    .header_reiki{
         background-image: url('../images/tarot.jpg');
         height: 100vh;
     }
