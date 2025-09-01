@@ -5,9 +5,10 @@
 @import url('../styles/style_section-contacto.css');
 @import url('../styles/style_section_reiki.css');
 @import url('../styles/style_section_radiestesia.css');
+@import url('../styles/style_section_limpieza.css');
 
 .header_main{
-    background-image: url('../images/luna_negra.jpg');
+    background-image: url('../images/back_luna_negra.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +21,7 @@
     font-size: 200px;
     color: var(--blanco);
     margin-top: 30vh;
-    text-shadow: 5px 5px 10px rgba(248, 247, 249, 0.9);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 768px){

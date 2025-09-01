@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+
     document.getElementById("enviar_tarot").addEventListener("click", function() {
         window.open(
             "https://api.whatsapp.com/send?phone=59898582316&text=Buenas%2C%20me%20gustar%C3%ADa%20hacer%20una%20consulta...", 
@@ -60,5 +62,56 @@ document.addEventListener('DOMContentLoaded', function () {
           });
 
     });
+
+    document.getElementById('cristal_1').addEventListener('click', function () {
+
+      Swal.fire({
+          title: 'Chakra Raíz',
+          html: '<p style="text-align: justify;"> Estoy segura, estable y confío en la vida.</p>',
+          //icon: 'success',
+          showCancelButton: false,
+          confirmButtonText: 'Cerrar',
+          cancelButtonText: 'Cancelar'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            location.reload(true);
+          }
+        });
+
+    });
+
+  document.getElementById('cristal_2').addEventListener('click', function () {
+
+    Swal.fire({
+        title: 'Chakra Sacro',
+        html: '<p style="text-align: justify;"> Soy libre de crear y disfrutar con alegría.</p>',
+        //icon: 'success',
+        showCancelButton: false,
+        confirmButtonText: 'Cerrar',
+        cancelButtonText: 'Cancelar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          location.reload(true);
+        }
+      });
+
+  });
+
+  document.getElementById('cristal_3').addEventListener('click', function () {
+
+    Swal.fire({
+        title: 'Chakra Plexo Solar',
+        html: '<p style="text-align: justify;"> Mi poder interior brilla con confianza.</p>',
+        //icon: 'success',
+        showCancelButton: false,
+        confirmButtonText: 'Cerrar',
+        cancelButtonText: 'Cancelar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          location.reload(true);
+        }
+      });
+
+  });
 
 });

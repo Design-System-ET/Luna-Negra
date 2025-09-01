@@ -1,0 +1,75 @@
+.header_limpieza{
+    background-image: url('../images/limpieza_energetica.jpg');
+    height: 100vh;
+}
+
+.titulo_ener{
+    font-family: var(--le_your_script);
+
+    font-size: 150px;
+    color: var(--blanco);
+    margin-top: 30vh;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.seccion-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0 5%;
+    width: 100%;
+    height: auto;
+}
+
+.img_container_limpieza{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    /*align-items: center;*/
+
+}
+
+.img-limpieza{
+    width: 50%;
+    height: auto;
+    border-radius: 0% 50% 0% 50%;
+    margin-top: 20px;
+}
+
+.img-limpi{
+    width: 30%;
+    height: auto;
+    border-radius: 50% 50% 50% 50%;
+    margin-top: 20px;
+}
+
+.size{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ul_radi{
+    list-style: disc;       /* Fuerza los puntos (•) */
+    list-style-position: inside; /* El punto queda al inicio del texto */
+    margin: 0;
+    padding-left: 20px;
+  }
+
+@media (max-width: 768px) {
+    .header_limpieza{
+        background-image: url('../images/tarot.jpg');
+        height: 100vh;
+    }
+
+    .size{
+        font-size: 30px;
+    }
+
+    .titulo_ener{
+        font-size: 80px;
+    }
+}
