@@ -6,6 +6,7 @@
 @import url('../styles/style_section_reiki.css');
 @import url('../styles/style_section_radiestesia.css');
 @import url('../styles/style_section_limpieza.css');
+@import url('../styles/style_section_corte.css');
 
 .header_main{
     background-image: url('../images/back_luna_negra.jpeg');
