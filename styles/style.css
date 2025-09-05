@@ -51,6 +51,7 @@
     align-items: center;
     padding-left: 0 5%;
     width: 100%;
+    height: 100vh;
     
     background-image: url('../images/background_2.jpg');
     background-size: cover;
@@ -64,7 +65,7 @@
     padding-left: 0 5%;
     width: 100%;
     
-    background-image: url('../images/floral_4.jpg');
+    background-image: url('../images/bola_cristal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,6 +176,20 @@
     align-items: center;
    
   }
+
+  .padding_text_tarjeta {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px; /* Espaciado interno para que el texto no toque los bordes */
+    padding-bottom: 30px;
+    background-color: rgba(231, 224, 224, 0.195); /* Fondo con opacidad (negro al 50%) */
+    color: white; /* Color del texto */
+    border-radius: 50px; /* Bordes redondeados para un diseño más agradable */
+    overflow: hidden; /* Asegura que el texto no se desborde */
+    text-align: justify; /* Alinea el texto para que quede bien distribuido */
+}
 
 .div-block {
     display: flex; 
