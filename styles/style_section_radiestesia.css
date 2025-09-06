@@ -42,8 +42,8 @@
   }
 
 @media (max-width: 768px) {
-    .header_reiki{
-        background-image: url('../images/tarot.jpg');
+    .header_radiestesia{
+        background-image: url('../images/back_radi.jpg');
         height: 100vh;
     }
 
