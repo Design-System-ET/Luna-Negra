@@ -1,0 +1,134 @@
+.header_tienda{
+    height: 80vh;
+}
+
+.contenedor_tienda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*border: 1px solid black;*/
+    height: 100%;
+    width: 100%;
+}
+
+#banner {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transition: background-image 1s ease-in-out; /* animación suave */
+}
+
+.carrusel{
+    margin-top: 70px;
+    /*border: 1px solid black;*/
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.encabezado_tienda{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.titulo_tienda{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.bienvenido{
+    font-family: var(--sensations);
+    padding-left: 15%;
+    font-size: 60px;
+    color: var(--negro);
+ 
+}
+
+.seccion-6{
+    display: flex;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5%;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+  .card-body{
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  }
+
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+
+  .title_card{
+    font-size: 20px;
+    text-align: left;
+    color: var(--naranja);
+    
+  }
+
+  .price_card{
+    color: var(--negro);
+    text-align: left;
+  }
+
+  .btn-comprar{
+    padding: 10px 20px;
+    background-color: var(--verde) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.1s;
+  }
+
+  .btn-comprar:hover {
+    background-color: var(--primary-color);
+  }
+
+  .text{
+    text-align: justify;
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .contenedor-texto{
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5%;
+        gap: 20px;
+      }
+
+  }

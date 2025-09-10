@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.ico">
+    
+    
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Tarot</title>
+</head>
+<body>
+    <header class="header_tienda">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo_5.png" alt="imagen personal" class="ico">
+            </div>
+
+            <!-- menu amburguesa cuando se ejecuta en pantalla chica -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            
+            <ul class="menu">
+                <li class="items"><a href="../index.html"> Inicio</a></li>
+                <li class="items"><a> Servicios</a>
+                
+                    <ul class="submenu">
+                        <li><a href="/pages/tarot.html">Tarot</a></li>
+                        <li><a href="/pages/reiki.html">Reiki</a></li>
+                        <li><a href="/pages/radiestesia.html">Radiestesia</a></li>
+                        <li><a href="/pages/limpieza.html">Limpieza Energetica</a></li>
+                        <li><a href="/pages/cortes.html">Corte de Lazos</a></li>
+                        <li><a href="/pages/tienda.html">Tienda</a></li>
+                    </ul>
+                
+                </li>
+                
+                <li class="items"><a href="../pages/formulario.html"> Contacto</a></li>
+            </ul>
+
+        </nav>
+        
+        <div class="contenedor_tienda">
+
+            <div id="banner" class="carrusel">
+            
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="">
+            <p class="bienvenido">✨ Bienvenido a nuestra Tienda Esotérica ✨</p>
+            <p class="parrafo2">Un espacio creado para quienes buscan equilibrio, protección y conexión espiritual. Aquí encontrarás una amplia variedad de productos esotéricos seleccionados con cuidado: desde inciensos, velas y piedras energéticas, hasta amuletos, talismanes y accesorios rituales.</p>
+            <p class="parrafo2">Cada artículo está pensado para acompañarte en tu camino de autoconocimiento, limpieza energética y desarrollo espiritual. 🌙🔮</p>
+            <p class="parrafo2">Ya sea que busques armonizar tus energías, atraer prosperidad, fortalecer la protección personal o simplemente embellecer tu altar, en nuestra tienda encontrarás lo que necesitas para transformar tu entorno y tu interior.</p>
+        </div>
+
+        <div class="encabezado_tienda">
+            <p class="titulo_tienda">Últimos Productos</p>
+        </div>
+        
+
+        <section class="seccion-6">
+            
+
+            <div id="productos" class="grid"></div>
+
+            <!--Cargo el script para comunicar con la API-->
+            <script src="../scripts/tienda.js"></script>
+          
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="marco">
+
+            <div class="conte">
+                <p class="txt_footer">Contacto</p>
+                
+                <div class="ico_content_2">
+                    <a href="https://api.whatsapp.com/send?phone=59898582316&text=Buenas%2C%20me%20gustar%C3%ADa%20hacer%20una%20consulta..." target="_blank"><img src="../images/whatt.png" alt="facebook" class="ico_rs"></a>
+                    <a href=""><img src="../images/email_2.png" alt="instagram" class="ico_rs"></a>
+                </div>
+
+            </div>
+
+            <div class="conte">
+                <p class="txt_footer">Redes Sociales</p>
+
+                <div class="ico_content">
+                    <a href="https://www.facebook.com/share/1B4DnHSUdJ/?mibextid=wwXIfr" target="_blank"><img src="../images/face.png" alt="facebook" class="ico_rs"></a>
+                    <a href="https://www.instagram.com/lunanegra__accesorios?igsh=dnI2NmVuc2N6M211&utm_source=qr" target="_blank"><img src="../images/insta.png" alt="instagram" class="ico_rs"></a>
+                    <a href=""><img src="../images/you.png" alt="youtube" class="ico_rs"></a>
+                </div>
+
+
+            </div>
+
+            <div class="conte">
+                <p class="txt_footer">Design by</p>
+                <div class="ico_content">
+                    <img src="../images/LOGO.ico" alt="" class="ico_by">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="by">
+            <p>© Copyright 2025 - Powered by <a href="https://api.whatsapp.com/send?phone=59891388175&text=Buenas%2C%20me%20gustar%C3%ADa%20hacer%20una%20consulta..." target="_blank">Design System</a></p>
+        </div>
+    </footer>
+
+    <!--para darle tiempo al DOM de crear el div y despues vargar las imagenes-->
+    <script src="../scripts/banner.js"></script>
+</body>
+</html>
