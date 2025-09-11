@@ -1,6 +1,6 @@
 async function cargarProductos() {
     try {
-      const response = await fetch("http://api-una-negra.mine.nu:9090/api/get");
+      const response = await fetch("http://api-luna-negra.mine.nu:9090/api/get");
       const productos = await response.json();
   
       const contenedor = document.getElementById("productos");
@@ -10,7 +10,7 @@ async function cargarProductos() {
         const card = document.createElement("div");
         card.className = "card";
         card.innerHTML = `
-          <img src="http://api-una-negra.mine.nu:9090/api/images/${p.imagePath}" alt="${p.producto}">
+          <img src="http://api-luna-negra.mine.nu:9090/api/images/${p.imagePath}" alt="${p.producto}">
           <div class="card-body"> 
             <p class="title_card">${p.producto}</p>
             <br>
