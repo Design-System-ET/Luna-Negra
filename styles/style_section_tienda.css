@@ -54,8 +54,12 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .card {
@@ -122,13 +126,14 @@
     height: auto;
   }
 
-  @media (max-width: 768px) {
-
+  @media (min-width: 768px) {
     .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 5%;
-        gap: 20px;
-      }
-
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1080px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
