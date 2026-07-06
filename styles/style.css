@@ -8,6 +8,7 @@
 @import url('../styles/style_section_limpieza.css');
 @import url('../styles/style_section_corte.css');
 @import url('../styles/style_section_tienda.css');
+@import url('../styles/footer.css');
 
 .header_main{
     background-image: url('../images/back_lila.jpg');
