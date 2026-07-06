@@ -372,3 +372,10 @@
         width: 30%;
     }
 }
+
+.wspbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
