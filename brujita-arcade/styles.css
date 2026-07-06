@@ -1,0 +1,206 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body {
+width:100%; height:100%; overflow:hidden;
+background:#0a0420;
+font-family: 'Trebuchet MS', system-ui, sans-serif;
+color:#fff;
+user-select:none;
+-webkit-tap-highlight-color: transparent;
+}
+body { min-height:100dvh; overscroll-behavior:none; }
+#game-wrap {
+position:relative; width:100vw; height:100dvh;
+display:flex; align-items:center; justify-content:center;
+overflow:hidden;
+padding:8px;
+}
+#game {
+display:block;
+background: linear-gradient(180deg,#0a0420 0%,#1a0a3a 50%,#2a0a4a 100%);
+box-shadow:0 0 60px rgba(180,80,255,.5);
+image-rendering: pixelated;
+width:min(100%, 540px);
+height:auto;
+max-width:100%; max-height:100%;
+aspect-ratio:3 / 2;
+cursor:crosshair;
+}
+
+/* HUD */
+#hud {
+position:absolute; top:10px; left:10px; right:10px;
+display:flex; justify-content:space-between; align-items:center; gap:8px;
+pointer-events:none; z-index:5;
+font-family:'Trebuchet MS', sans-serif;
+text-shadow: 0 2px 6px #000, 0 0 12px rgba(180,80,255,.7);
+letter-spacing:1px;
+flex-wrap:wrap;
+}
+.hud-box {
+background: rgba(20,5,40,.55);
+border:2px solid rgba(255,200,255,.5);
+border-radius:12px;
+padding:8px 14px;
+backdrop-filter: blur(4px);
+min-width:0;
+flex:1 1 0;
+}
+#score-box { font-size:18px; }
+#lives-box { font-size:18px; }
+#level-box { font-size:18px; text-align:center; }
+.label { font-size:11px; opacity:.75; display:block; }
+.value { font-size:22px; font-weight:bold; color:#ffe066; }
+.combo { color:#ff8de0; font-size:14px; }
+
+/* Overlay */
+#overlay {
+position:absolute; inset:0;
+display:flex; flex-direction:column;
+align-items:center; justify-content:center;
+background: radial-gradient(ellipse at center, rgba(20,5,50,.85), rgba(5,2,20,.95));
+z-index:10;
+text-align:center; padding:24px;
+transition: opacity .4s;
+}
+#overlay.hidden { opacity:0; pointer-events:none; z-index:0; }
+#overlay h1 {
+font-size: clamp(36px, 8vw, 72px);
+background: linear-gradient(180deg, #ff9ee0 0%, #b066ff 60%, #6a30a8 100%);
+-webkit-background-clip: text; background-clip: text;
+color: transparent;
+text-shadow: 0 0 30px rgba(180,80,255,.6);
+margin-bottom: 12px;
+letter-spacing:2px;
+}
+#overlay h2 {
+font-size: clamp(20px, 4vw, 32px);
+color:#ffe066;
+margin-bottom: 18px;
+text-shadow: 0 0 12px rgba(255,200,80,.6);
+}
+#overlay p {
+font-size: clamp(14px, 2.4vw, 18px);
+max-width:600px; margin: 6px auto;
+line-height:1.5;
+color:#e8d4ff;
+}
+#overlay .story {
+background: rgba(60,20,100,.4);
+border:1px solid rgba(255,200,255,.3);
+border-radius:14px;
+padding:14px 18px;
+margin:14px auto;
+font-style:italic;
+color:#fff8d8;
+}
+#overlay button {
+margin-top:18px;
+background: linear-gradient(180deg, #ff7ec7 0%, #b04aff 100%);
+color:#fff;
+border:none;
+padding:14px 36px;
+font-size:18px;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+box-shadow: 0 6px 20px rgba(180,80,255,.5), inset 0 -3px 0 rgba(0,0,0,.25);
+transition: transform .15s, box-shadow .15s;
+letter-spacing:1.5px;
+}
+#overlay button:hover { transform:translateY(-2px) scale(1.04); box-shadow: 0 10px 30px rgba(180,80,255,.7); }
+#overlay button:active { transform:translateY(1px); }
+#overlay .controls {
+margin-top:14px;
+font-size:13px; opacity:.85;
+background: rgba(0,0,0,.3);
+padding:8px 16px;
+border-radius:10px;
+}
+.keys { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); border-radius:5px; padding:2px 7px; margin:0 2px; font-family:monospace; font-weight:bold; }
+
+/* Touch controls */
+#touch {
+position:absolute; bottom:max(14px, env(safe-area-inset-bottom)); left:0; right:0;
+display:none;
+justify-content:space-between; align-items:flex-end;
+padding:0 14px; z-index:999;
+pointer-events:none;
+gap:12px;
+touch-action:none;
+}
+#touch.visible { display:flex; }
+#joystick {
+pointer-events:auto;
+width:112px; height:112px;
+border-radius:50%;
+background: rgba(10,4,32,.65);
+border:2px solid rgba(255,200,255,.65);
+display:flex; align-items:center; justify-content:center;
+position:relative;
+box-shadow: inset 0 0 0 8px rgba(255,255,255,.04), 0 10px 24px rgba(0,0,0,.28);
+backdrop-filter: blur(8px);
+touch-action:none;
+}
+.joystick-base {
+width:76px; height:76px; border-radius:50%;
+background: radial-gradient(circle, rgba(255,255,255,.22) 0%, rgba(255,255,255,.06) 45%, rgba(0,0,0,.12) 100%);
+position:relative;
+border:1px solid rgba(255,255,255,.18);
+}
+.joystick-knob {
+width:38px; height:38px; border-radius:50%;
+background: linear-gradient(180deg, #ffd8f2 0%, #ff7ec7 100%);
+border:2px solid rgba(255,255,255,.8);
+position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+.touch-btn {
+pointer-events:auto;
+width:64px; height:64px;
+border-radius:50%;
+background: rgba(255,150,220,.25);
+border:2px solid rgba(255,200,255,.6);
+display:flex; align-items:center; justify-content:center;
+font-size:28px; color:#fff;
+backdrop-filter: blur(6px);
+-webkit-user-select:none;
+touch-action:none;
+}
+.touch-btn:active { background: rgba(255,150,220,.55); transform:scale(.92); }
+.action-btn { background: rgba(180,80,255,.35); border-color:#ff9ee0; }
+
+/* Mute button */
+#mute {
+position:absolute; top:max(64px, calc(env(safe-area-inset-top) + 12px)); right:14px;
+width:40px; height:40px;
+background: rgba(20,5,40,.7);
+border:2px solid rgba(255,200,255,.5);
+border-radius:50%;
+color:#fff; font-size:18px;
+cursor:pointer;
+z-index:6;
+}
+
+@media (max-width: 768px) {
+#touch.visible { display:flex; }
+#hud { top:8px; left:8px; right:8px; gap:6px; justify-content:center; }
+.hud-box { padding:6px 10px; border-radius:10px; flex: 1 1 calc(50% - 6px); }
+#level-box { flex-basis:100%; text-align:center; }
+#score-box, #lives-box { min-width:calc(50% - 6px); }
+#mute { top:max(10px, calc(env(safe-area-inset-top) + 6px)); right:10px; width:38px; height:38px; font-size:16px; }
+#overlay { padding:16px 14px; }
+#overlay h1 { margin-bottom:8px; }
+#overlay h2 { margin-bottom:12px; }
+#overlay button { padding:12px 24px; font-size:16px; }
+#joystick { width:116px; height:116px; }
+.joystick-base { width:80px; height:80px; }
+.joystick-knob { width:40px; height:40px; }
+}
+
+@media (max-width: 480px) {
+#touch { padding:0 10px; bottom:max(10px, env(safe-area-inset-bottom)); }
+.touch-btn { width:56px; height:56px; font-size:24px; }
+#joystick { width:112px; height:112px; }
+.joystick-base { width:76px; height:76px; }
+.joystick-knob { width:38px; height:38px; }
+}

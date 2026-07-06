@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description" content="Brujita Jessica: un arcade web de reparto nocturno con pociones, enemigos y una escoba mágica." />
+<meta name="theme-color" content="#0a0420" />
+<title>🧹 Brujita Jessica — Reparto Nocturno</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<noscript>
+  <div style="position:fixed; inset:0; z-index:20; background:#0a0420; color:#fff; display:flex; align-items:center; justify-content:center; padding:24px; text-align:center; font-family:'Trebuchet MS', sans-serif;">
+    <div>
+      <h2>JavaScript necesario</h2>
+      <p>Activa JavaScript para disfrutar de Brujita Jessica.</p>
+    </div>
+  </div>
+</noscript>
+<div id="game-wrap">
+  <canvas id="game" width="900" height="600"></canvas>
+
+  <div id="hud">
+    <div id="score-box" class="hud-box">
+      <span class="label">PUNTOS</span>
+      <span class="value" id="score">0</span>
+      <div class="combo" id="combo"></div>
+    </div>
+    <div id="level-box" class="hud-box">
+      <span class="label">NIVEL</span>
+      <span class="value" id="level">1</span>
+      <div class="combo" id="objective">Entrega: 5 pociones</div>
+    </div>
+    <div id="lives-box" class="hud-box">
+      <span class="label">VIDAS</span>
+      <span class="value" id="lives">❤️❤️❤️❤️❤️</span>
+    </div>
+  </div>
+
+  <button id="mute" title="Silenciar / Activar audio">🔊</button>
+
+  <div id="touch">
+    <div id="joystick" class="joystick" aria-label="joystick de movimiento">
+      <div class="joystick-base">
+        <div class="joystick-knob" id="joystick-knob"></div>
+      </div>
+    </div>
+    <div class="touch-btn action-btn" data-key="Space">✨</div>
+  </div>
+
+  <div id="overlay">
+    <h1>🧹 Brujita Jessica</h1>
+    <h2>Luna Negra - Reparto de Pociones</h2>
+    <div class="story" id="story-text">
+      "¡Hola! Soy Brujita, la repartidora más veloz de Chuy. La Academia de Magia me rechazó porque, según ellos, no tengo poderes... ¡Pero lo que sí tengo es esta escoba tuneada y muchas ganas de comerme el mundo!"
+    </div>
+    <p style="font-size:13px; opacity:.8;">Usa <span class="keys">WASD</span> o <span class="keys">←↑→↓</span> para volar. <span class="keys">Espacio</span> para lanzar hechizos.</p>
+    <p style="font-size:13px; opacity:.8;">Recoge pociones ⭐ y entrega a los clientes 🏠. Esquiva murciélagos 🦇, rayos ⚡ y cometas ☄️.</p>
+    <button id="start-btn">🧹 ¡Arrancar la Escoba!</button>
+    <p style="font-size:11px; opacity:.5; margin-top:14px;">Design System - Juegos Arcade✨</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
